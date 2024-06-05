@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MusicLib</div>
+            <ul class="nav-links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#featured">Featured Playlists</a></li>
+                <li><a href="#recommended">Recommended Albums</a></li>
+                <li><a href="#reviews">User Reviews</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="intro-text">
+            <h1>Welcome to MusicLib</h1>
+            <p>Your ultimate music library platform</p>
+            <a href="#featured" class="btn">Explore Featured Playlists</a>
+        </div>
+        <div class="intro-image">
+            <img src="music.png" alt="Music Illustration">
+        </div>
+    </section>
+
+    <!-- Featured Playlists -->
+    <section id="featured" class="featured-section">
+        <h2>Featured Playlists</h2>
+        <p>Discover our top playlists curated just for you</p>
+        <button class="follow-btn">Follow</button>
+        <div class="playlists">
+            <!-- Playlist Cards -->
+            <div class="playlist-card">
+                <div class="playlist-img"><img src="playlist1.jpg" alt="Playlist 1"></div>
+                <h3>Chill Vibes</h3>
+                <p>Relax and unwind with these mellow tunes.</p>
+                <span class="song-count">20 Songs</span>
+            </div>
+            <div class="playlist-card">
+                <div class="playlist-img"><img src="playlist2.jpg" alt="Playlist 2"></div>
+                <h3>Top Hits</h3>
+                <p>Catch up with the latest chart-toppers.</p>
+                <span class="song-count">25 Songs</span>
+            </div>
+            <div class="playlist-card">
+                <div class="playlist-img"><img src="playlist3.webp" alt="Playlist 3"></div>
+                <h3>Workout Mix</h3>
+                <p>Get pumped with these high-energy tracks.</p>
+                <span class="song-count">30 Songs</span>
+            </div>
+            <div class="playlist-card">
+                <div class="playlist-img"><img src="playlist4.png" alt="Playlist 4"></div>
+                <h3>Classical Essentials</h3>
+                <p>Timeless pieces to soothe your soul.</p>
+                <span class="song-count">15 Songs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Albums -->
+    <section id="recommended" class="recommended-section">
+        <h2>Recommended Albums</h2>
+        <p>Explore albums we think you'll love</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for albums...">
+            <i class="search-icon">🔍</i>
+        </div>
+        <div class="albums">
+            <!-- Album Cards -->
+            <div class="album-card">
+                <div class="album-img"><img src="album1.jpg" alt="Album 1"></div>
+                <h3>Krishnakumar Kunnath</h3>
+                <p>Album Title 1</p>
+                <div class="know-more">Know More</div>
+            </div>
+            <div class="album-card">
+                <div class="album-img"><img src="album2.jpg" alt="Album 2"></div>
+                <h3>Arjit Singh</h3>
+                <p>Album Title 2</p>
+                <div class="know-more">Know More</div>
+            </div>
+            <div class="album-card">
+                <div class="album-img"><img src="album3.jpg" alt="Album 3"></div>
+                <h3>Darshan Raval</h3>
+                <p>Album Title 3</p>
+                <div class="know-more">Know More</div>
+            </div>
+            <div class="album-card">
+                <div class="album-img"><img src="album4.jpg" alt="Album 4"></div>
+                <h3>Sonu Nigam</h3>
+                <p>Album Title 4</p>
+                <div class="know-more">Know More</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Reviews -->
+    <section id="reviews" class="reviews-section">
+        <h2>User Reviews</h2>
+        <p>What our users are saying</p>
+        <div class="reviews">
+            <!-- Review Cards -->
+            <div class="review-card">
+                <img src="user1.png" alt="User 1">
+                <h3>User 1</h3>
+                <p>Great platform for discovering new music!</p>
+            </div>
+            <div class="review-card">
+                <img src="user2.jpeg" alt="User 2">
+                <h3>User 2</h3>
+                <p>I love the curated playlists!</p>
+            </div>
+            <div class="review-card">
+                <img src="user3.jpeg" alt="User 3">
+                <h3>User 3</h3>
+                <p>Fantastic collection of albums.</p>
+            </div>
+        </div>
+        <div class="review-form">
+            <h3>Submit Your Review</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Review" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-links">
+                <a href="https://example.com/terms" target="_blank">Terms and Conditions</a>
+                <a href="https://example.com/privacy" target="_blank">Privacy Policy</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Music Library Platform. All rights reserved.</p>
+        <button class="back-to-top">Back to Top</button>
+    </footer>
+
+    <!-- Modal (for album details) -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <div class="modal-img"><img src="album1.jpg" alt="Album"></div>
+            <h3>Album Title</h3>
+            <h4>Artist Name</h4>
+            <p>Brief description of the album...</p>
+            <button>Listen Now</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<input id="theme" type=checkbox>
+<label for="theme">
+  <span id="light">☀️ Light Mode</span>
+  <span id="dark">🌙 Dark Mode</span>
+</label>
+
